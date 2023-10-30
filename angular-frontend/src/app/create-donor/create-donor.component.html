@@ -1,0 +1,26 @@
+<div class="col-md-6 offset-md-3">
+  <h3>Create Donor</h3>
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label>Name</label>
+      <input type="text" class="form-control" id="name" [(ngModel)]="donor.name" name="name">
+    </div>
+
+    <div class="form-group">
+      <label>Blood group</label>
+      <input type="text" class="form-control" id="bloodGroup" [(ngModel)]="donor.bloodGroup" name="bloodGroup">
+    </div>
+
+    <div class="form-group">
+      <label>Contact Number</label>
+      <input type="text" class="form-control" id="contactNumber" [(ngModel)]="donor.contactNumber" name="contactNumber">
+    </div>
+
+    <div class="form-group">
+      <label>Email Id</label>
+      <input type="text" class="form-control" id="emailId" [(ngModel)]="donor.emailId" name="emailId">
+    </div>
+
+    <button class="btn btn-success" type="submit">Create Donor</button>
+  </form>
+</div>

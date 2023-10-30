@@ -1,0 +1,29 @@
+<h2> Donor List</h2>
+<table class="table table-stripes">
+<thead>
+  <tr>
+    <th>Name</th>
+    <th>Blood Group</th>
+    <th>Contact Number</th>
+    <th>Email id</th>
+    <th>Actions</th>
+  </tr>
+</thead>
+<tbody>
+   <tr *ngFor="let donorItem of donor">
+    
+    <td>{{ donorItem.name }}</td>
+    <td>{{ donorItem.bloodGroup }}</td>
+    <td>{{ donorItem.contactNumber }}</td>
+    <td>{{ donorItem.emailId }}</td>
+    <td>
+      <button (click)="updateDonor(donorItem.id)" class="btn btn-info">Update</button>
+      <button (click)="deleteDonor(donorItem.id)" class="btn btn-danger" style="margin: left 10px;">Delete</button>
+      <button (click)="donorDetails(donorItem.id)" class="btn btn-info" style="margin: left 10px;">View</button>
+
+    </td>
+
+</tr>
+</tbody>
+
+</table>

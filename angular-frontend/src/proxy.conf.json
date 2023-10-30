@@ -1,0 +1,5 @@
+{
+  "/*" : "http://localhost:9090/api/s1/donors",
+  "secure": false,
+  "logLevel": "debug"
+}
